@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포도알 티켓팅 연습</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./minipage.css">
+    <script defer src="./minipage.js"></script>
+
+
+</head>
+<body>
+    
+    <div class="head">
+        <div class="headFrom">
+            <div class="headNavForm">
+                <strong>실전은 이쪽!</strong>
+                <a href="https://tickets.interpark.com/">인터파크</a>
+                <a href="https://ticket.yes24.com/">예스24</a>
+            </div>
+            <div class="headSearchForm">
+                <div id="btnImage">
+                    <img src="./btn.png" alt="시계버튼이미지">
+                </div>
+
+                <div id="search-input-area">
+                    <input type="text">
+                </div>
+                <div><img src="./searchIcon.jpg" alt="버튼아이콘" id="btnIcon"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 포도알 게임 구현 -->
+
+    <h1>포도알 티켓팅 연습 게임</h1>
+    <p>30초 이내에 박스를 누른 횟수를 카운트하세요.</p>
+    <p class="line">스코어: <span id="score">0</span></p>
+
+    <div class="grid" id="game-container">
+        <!-- HTML로 그리드를 미리 생성 -->
+        <!-- 8x8 그리드에 64개의 박스를 생성 -->
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+    <div id="game-container"> </div>
+    <button class="btn-15" onclick="startGame()">게임 시작</button>
+
+    <h3>30초 카운터</h3>
+    <p class="line">남은 시간: <span id="timer">30</span> 초</p>
+
+</body>
+</html>
